@@ -250,7 +250,7 @@ footer .container div:last-child a {
 
 @media (max-width: 700px) {
     h3 {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
 
     .phone-yes {
@@ -282,15 +282,17 @@ footer .container div:last-child a {
         background: aquamarine;
         border-radius: 16px;
         margin: 0px 5px;
+        font-size: 17px;
     }
 
     .banner {
-        padding: 40px 0;
+        padding: 20px 0;
+        overflow-x: clip;
     }
 
     .banner h2 {
-        font-size: 5vw;
-        max-width: calc(100% - 100px);
+        font-size: 6vw;
+        max-width: calc(100% - 50px);
     }
 
     .banner p {
@@ -299,8 +301,8 @@ footer .container div:last-child a {
     }
 
     .banner img {
-        right: -10px;
-        top: -20px;
+        right: -35px;
+        top: -10px;
     }
 
     .work-types .cards div p {

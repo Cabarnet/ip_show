@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@font-face { 
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica/HelveticaLight.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face { 
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica/HelveticaRegular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica/HelveticaMedium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face { 
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica/HelveticaBold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face { 
+    font-family: "Helvetica";
+    src: url(../fonts/Helvetica/HelveticaHeavy.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+* {
+    font-family: "Helvetica", Arial, sans-serif;
+}
+body {
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Oswald, "Helvetica", Arial;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+h3 {
+    font-family: Oswald, "Helvetica", Arial;
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: 100;
+    text-align: center;
+}
+
+header {
+    background-color: ghostwhite;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+header a {
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 0 15px;
+    text-align: center;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+header .container div:last-child a {
+    padding: 0;
+    font-family: Oswald, "Helvetica", Arial;
+}
+
+.banner {
+    background-color: ghostwhite;
+    padding: 100px 0;
+}
+
+.banner .container {
+    position: relative;
+}
+
+.banner img {
+    position: absolute; 
+    top: -60px; 
+    right: -100px; 
+    width: 70%; 
+    max-width: 650px; 
+    z-index: 1;
+}
+
+.banner h2 {
+    max-width: calc(100% - 250px);
+}
+
+
+.banner p {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    max-width: calc(100% - 250px);
+}
+
+.work-types {
+    padding: 30px 0 40px;
+}
+
+.work-types .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-types .cards div {
+    width: 40%;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 20px;
+    background-color: #f5f2f0;
+}
+
+.work-types .cards div img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.work-types .cards div p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0px 0px;
+}
+
+footer {
+    padding: 70px 0px 30px 0px;
+    background-color: ghostwhite;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+footer h1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+footer a {
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+footer .container div:last-child a {
+    padding: 0;
+}
+
+
+footer .container div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .container div:last-child a {
+    padding: 5px 0;
+}
+
+@media (min-width: 1100px) {
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    h2 {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 3.5vw;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    
+    header h1, footer h1 {
+        font-size: 19px;
+    }
+
+    header a, footer a {
+        font-size: 16px;
+    }
+    
+    .banner p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    
+    .banner img {
+        right: -30px;
+    }
+    
+    footer {
+        padding: 30px 0px 30px 0px;
+    }
+}
+
+@media (min-width: 700px) {
+    .phone-yes {
+        display: none !important;
+    }
+
+    .phone-not {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 700px) {
+    h3 {
+        font-size: 4.5vw;
+    }
+
+    .phone-yes {
+        display: flex !important;
+    }
+
+    .phone-not {
+        display: none !important;
+    }
+
+    header .container {
+        padding: 20px 0;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1, footer h1 {
+        font-size: 18px;
+    }
+
+    header a, footer a {
+        padding: 0 0 0 15px;
+        font-size: 16px;
+    }
+    
+    header .container div:last-child a {
+        padding: 0 15px;
+        background: aquamarine;
+        border-radius: 16px;
+        margin: 0px 5px;
+    }
+
+    .banner {
+        padding: 40px 0;
+    }
+
+    .banner h2 {
+        font-size: 5vw;
+        max-width: calc(100% - 100px);
+    }
+
+    .banner p {
+        font-size: 13px;
+        max-width: calc(100% - 100px);
+    }
+
+    .banner img {
+        right: -10px;
+        top: -20px;
+    }
+
+    .work-types .cards div p {
+        font-size: 13px;
+    }
+
+    footer .container {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+}
